@@ -1,0 +1,100 @@
+* {	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+body {
+	line-height: 1.6;
+	color: #333;
+}
+
+a {
+	text-decoration: none;
+}
+
+.about__inner {
+	height: 100vh;
+
+	background-image: url('../../../public/resourses/prikol1.gif');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding-bottom: 16%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.about__text{max-width: 60%; padding: 7% 0px 7% 20px;}
+.statistic__column{max-width: 20%; padding: 20px;}
+
+.about__statistic{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.about__text h2 {
+	font-size: clamp(20px, 5vw, 120px);
+	color: #fff;
+	font-weight: lighter;
+	width: 100%;
+	padding: 5% 0px 5% 0px;
+}
+
+.about__text p {
+	color: #fff;
+	font-size: clamp(8px, 1.4vw, 50px);
+}
+
+.barabulka {
+	text-align: start !important;
+	font-size: clamp(20px, 5vw, 120px);
+	color: #fff;
+	font-weight: lighter;
+}
+
+.about__statistic p {
+	color: #fff;
+	font-size: clamp(10px, 1.4vw, 55px);
+}
+
+.about__owerlay {
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 100vh;
+	padding-bottom: 16%;
+}
+
+@media screen and (max-width:1500px) {
+	.about__inner {
+		display: flex;
+		flex-direction: column;
+		height: 80%;
+		padding-top: -5%;
+		padding-bottom: 0;
+	}
+	.about__owerlay {
+		padding-bottom: 0;
+		height: 150%;
+	}
+}
+
+@media screen and (max-width:1060px) {
+	.about__inner {
+		
+		height: 80%;
+		padding-top: 10%;
+	}
+	main {
+		height: 100%;
+	}
+	.about__inner{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.about__owerlay {
+		padding-bottom: 0;
+		height: 100%;
+	}
+}

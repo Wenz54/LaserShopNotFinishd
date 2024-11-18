@@ -1,0 +1,276 @@
+* {	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+body {
+	line-height: 1.6;
+	color: #333;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*1 экран*/
+
+.Lenin {
+	background-image: url('../../../public/resourses/bckgrnd.gif');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #000;
+	
+}
+
+.prikol {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+}
+
+.Takoy_molodoy__text {
+	position: relative;
+	display: flex;
+	align-items: center;	
+	justify-content: space-between;
+	color: #fff;
+	height: 100vh;
+	font-size: clamp(15px, 1.5vw, 70px);
+	max-width: 100%;
+}
+
+.LasGr{
+	animation-name: dvij;
+	animation-duration: 1.5s;
+}
+
+.opisanie {
+	max-width: 600px;
+	min-width: 600px;
+	animation-name: dvij2;
+	animation-duration: 1.5s;
+}
+
+.Takoy_molodoy__text a {
+	background-color: #97020E;
+	color: #fff;
+	transition: all .2s ease;
+	padding: 5px 5px 5px 5px ;
+	margin-left:5px ;
+}
+
+.Takoy_molodoy__text a:hover {
+	background-color: white;
+	color: #000;
+}
+
+@keyframes dvij {
+	from {
+		margin-left: -50%;
+	}
+	to {
+		margin: 0;
+	}
+}
+
+@keyframes dvij2 {
+	from {
+		margin-left: 100%;
+	}
+	to {
+		margin: 0;
+	}	
+}
+
+/*2 экран*/
+
+.Jiv {
+	padding: 10px 10px 10px 10px ;
+	height: 92vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-direction: column;
+}
+
+.bebe {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: clamp(15px, 2vw, 70px);
+	text-align: center;
+	color: #000;
+}
+
+.plitrow img {
+	height: 400px;
+	transition: all .3s ease;
+}
+
+.plitrow {
+	margin-top: 50px;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.plito4ka {
+	font-size: clamp(10px, 2vw, 70px);
+	color: #fff;
+	background-color: #000;
+	opacity: 0.9;
+	margin: 10px 10px 10px 10px ;
+	transition: all .3s ease;
+}
+
+.plito4ka:hover {
+	opacity: 1;
+}
+
+/*3 экран*/
+
+.mi_tut {
+	height: 92vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.mi_tut__text {
+	padding: 75px;
+	font-size: clamp(15px, 2vw, 70px);
+	text-align: center;
+}
+
+.mi_tut__map {
+	width: 100%;
+}
+
+@media screen and (max-width:1050px) {
+	.mi_tut {
+		margin-top: 200px;
+	}
+}
+
+@media screen and (max-width:750px) {
+	.Takoy_molodoy__text {
+		position: relative;
+		display: flex;
+		align-items: center;	
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		color: #fff;
+		height: auto;
+		font-size: clamp(15px, 1.5vw, 50px);
+		max-width: 100%;
+	}
+}
+
+@media screen and (max-width:700px) {
+	.Takoy_molodoy__text {
+		position: relative;
+		display: flex;
+		align-items: center;	
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		color: #fff;
+		height: auto;
+		font-size: clamp(15px, 1.5vw, 50px);
+		max-width: 100%;
+	}
+	.opisanie {
+		max-width: 300px;
+		min-width: 300px;
+		animation-name: dvij2;
+		animation-duration: 1.5s;
+	}
+	.mi_tut__map {
+		width: 100%;
+		margin-top: 50px;
+	}
+}
+@media screen and (max-width: 540px) {
+	.Lenin {
+		background-image: url('../../../public/resourses/bckgrnd.gif');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: #000;
+		margin-bottom: 50px;
+	}
+	.Takoy_molodoy__text {
+		position: relative;
+		display: flex;
+		align-items: center;	
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		color: #fff;
+		height: auto;
+		font-size: clamp(15px, 1.5vw, 50px);
+		max-width: 100%;
+		margin-top: 160px;
+	}
+	
+	.mi_tut {
+		margin-top: 50px;
+		height: 92vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}	
+}
+
+@media screen and (max-width: 300px) {
+	.Takoy_molodoy__text {
+		position: relative;
+		display: flex;
+		align-items: center;	
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		color: #fff;
+		height: auto;
+		font-size: clamp(10px, 1.5vw, 50px);
+		margin-top: 160px;
+		width: 280px;
+	}
+	.opisanie {
+		max-width: 280px;
+		min-width: 280px;
+	}
+	.plitrow {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 2800px) {
+	.opisanie {
+		max-width: 1200px;
+		min-width: 1200px;
+		animation-name: dvij2;
+		animation-duration: 1.5s;
+	}
+}

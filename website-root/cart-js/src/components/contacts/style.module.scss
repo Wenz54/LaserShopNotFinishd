@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+.contactInner {
+    height: 100vh;
+    background-image: url('../../../public/resourses/prikol2.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.contactOverlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactOverlay h2 {
+    color: #fff;
+    font-size: 70px;
+}
+
+.overlayInner {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 25px;
+}
+
+.contactOverlay a {
+    background-image: linear-gradient(to right, rgba(151, 2, 14, 0.5), transparent);
+    color: #fff;
+    margin: 2px;
+    padding: 5px;
+    font-size: 28px;
+    transition: all 0.2s ease;
+}
+
+.contactOverlay a:hover {
+    background-color: #97020E;
+}
+
+.overlayColumns {
+    margin-top: 3%;
+    display: flex;
+    width: 50%;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.owColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.owColumn h2 {
+    font-size: 50px;
+}

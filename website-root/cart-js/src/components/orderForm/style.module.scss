@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main__container {
+    padding: 6% 0px 6% 0px;
+}
+
+.main__container2 {
+    padding: 20% 0px 20% 0px;
+    height: 100%;
+}
+
+.orderPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.formGroup {
+    padding: 5% 0px 5% 0px;
+}
+
+.dropzone {
+    border: 2px dashed #97020E;
+    padding: 20px;
+    text-align: center;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.dropzone p {
+    font-size: 20px;
+}
+
+.uploadButton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #97020E;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.uploadButton:hover {
+    background-color: #0056b3;
+}
+
+.orderForm {
+    text-align: left;
+    width: 45%;
+}
+
+label {
+	color: #000;
+	font-size: 30px;
+	font-weight: bold;
+	transition: all 0.2s ease;
+}
+
+.formGroup input {
+    float: right;
+    border: solid;
+    outline: none;
+    background: transparent;
+    width: 60%;
+    flex: 1;
+    height: 50px;
+    font-size: 20px;
+    padding-left: 15px;
+    transition: all 0.2s linear;
+}
+
+.formGroup input:focus {
+    border-color:#97020E;
+}
+
+.orderNow {
+    margin: 5% 0px 0px 37%;
+    width: 200px;
+    border: none;
+    height: 70px;
+    font-size: 35px;
+    color: #fff;
+    border-color: #000;
+    font-weight: bold;
+    background-color: #97020E;
+    transition: all 0.2s ease;
+}
+.orderNow:hover {
+    color: #fff;
+    background-color: #000;
+    border: bold;
+    border-color: #97020E;
+}
+
+.deleteFile {
+    color: #fff;
+    background-color: #000;
+    padding: 2px;
+    margin: 2px;
+    transition: all 0.2s ease;
+}
+
+.deleteFile:hover {
+    color: #fff;
+    background-color:#97020E;
+    padding: 2px;
+}

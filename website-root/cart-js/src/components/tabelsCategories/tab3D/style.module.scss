@@ -1,0 +1,118 @@
+* {	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+body {
+	min-height: 92%;
+	line-height: 1.6;
+	color: #333;
+}
+
+a {
+	text-decoration: none;
+}
+/*Products*/
+
+.main__container {padding: 5.5% 0px 0px 0px;}
+.main__container2 {
+	padding: 18% 0px 15% 0px;
+	height: 100%;
+}
+
+.plate_row_kostil {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
+
+.plate_row {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+}
+
+.plate {
+	max-width: 400px;
+	max-height: 399px;
+	margin: 15px 15px 55px 15px;
+}
+
+.plate .image {
+	height: 400px;
+	width: 400px;
+	transition: all 0.3s ease;
+}
+
+.plate_text {
+	display: flex;
+	flex-direction: row;
+}
+
+.plate_text .name {
+	display: flex;
+	position: relative;
+	background-size: cover;
+
+	background-color: #000;
+	color: #fff;
+
+	padding: 5px 20px 5px 5px ;
+	font-size: cover;
+	max-height: 40px;
+	max-width: 180px;
+	white-space: nowrap;
+	z-index: 2;
+	transition: all 0.3s ease;
+}
+
+.plate .price {
+	display: flex;
+	position: absolute;
+	background-size: cover;
+	opacity: 0;
+	background-color: #000;
+	color: #fff;
+
+	margin-top: -40px;
+	padding: 5px 5px 5px 5px ;
+	font-size: cover;
+	max-height: 40px;
+	max-width: 180px;
+	white-space: nowrap;
+
+	transition: all 0.3s ease;
+}
+
+.plate:hover .price {
+	margin-top: 0px;
+	opacity: 1;
+	padding: 5px;
+}
+
+.plate_text .size {
+	max-height: 30px;
+	max-width: 180px;
+	position: relative;
+	max-width: 200px;
+    padding: 15px;
+	font-size: 11px;
+	color: #FFF;
+    background-color: #000;
+    transition: all 0.3s ease;
+}
+
+.plate:hover .size {
+	color: #FFF;
+    background-color: #000;
+}
+
+.plate:hover .name {
+    background-color: #97020E;
+	color: #fff;
+}
+
+.plate:hover .image {
+    transform: scale(1.05);
+}
+
